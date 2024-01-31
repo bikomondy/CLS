@@ -1,0 +1,10 @@
+/* schedule.css */
+.schedule-container {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.schedule-container h2 {
+    margin-bottom: 20px;
+}

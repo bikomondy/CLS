@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h2 Computer Scheduling System
+  p Computer Scheduling System.
+
+- const pageTitle = "Homepage"
+- const navLinks = [
+  { href: "login.html", text: "Login" },
+  { href: "registration.html", text: "Register" },
+  { href: "forgot_password.html", text: "Forgot Password" },
+  { href: "dashboard.html", text: "Dashboard" },
+  { href: "Course Schedule Page.html", text: "Course Schedule" },
+  { href: "Lab Schedule Page.html", text: "Lab Schedule" },
+  { href: "Cancellation Page.html", text: "Cancellations" }
+]
+- const currentYear = new Date().getFullYear()
+- const footerText = "Computer Lab Scheduling System. All rights reserved."
+

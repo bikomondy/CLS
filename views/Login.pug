@@ -1,0 +1,12 @@
+.login-container
+  h2 Login
+  form(action="login.php", method="POST")
+    input(type="text", name="username", placeholder="Username", required)
+    input(type="password", name="password", placeholder="Password", required)
+    button(type="submit") Login
+  p 
+    | Don't have an account? 
+    a(href="registration.html") Register here.
+  p 
+    | Forgot password? 
+    a(href="forgot_password.html") Reset here.

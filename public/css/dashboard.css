@@ -1,0 +1,10 @@
+/* dashboard.css */
+.dashboard-container {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.dashboard-container h2 {
+    margin-bottom: 20px;
+}
