@@ -1,7 +1,6 @@
 use labs;
 show tables
 
--- Create User Table
 CREATE TABLE User (
     user_id INT PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(255) NOT NULL,
@@ -9,7 +8,7 @@ CREATE TABLE User (
     role ENUM('student', 'faculty') NOT NULL
 );
 
--- Create Course Table
+
 CREATE TABLE Course (
     course_id INT PRIMARY KEY AUTO_INCREMENT,
     course_code VARCHAR(10) NOT NULL,
@@ -18,13 +17,13 @@ CREATE TABLE Course (
     FOREIGN KEY (faculty_id) REFERENCES User(user_id) ON DELETE SET NULL ON UPDATE CASCADE
 );
 
--- Create Lab Table
+--  Lab Table
 CREATE TABLE Lab (
     lab_id INT PRIMARY KEY AUTO_INCREMENT,
     lab_name VARCHAR(50) NOT NULL
 );
 
--- Create Timetable Table
+--  Timetable Table
 CREATE TABLE Timetable (
     timetable_id INT PRIMARY KEY AUTO_INCREMENT,
     course_id INT,
@@ -35,7 +34,7 @@ CREATE TABLE Timetable (
     FOREIGN KEY (lab_id) REFERENCES Lab(lab_id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
--- Create Cancellation Table
+--  Cancellation Table
 CREATE TABLE Cancellation (
     cancellation_id INT PRIMARY KEY AUTO_INCREMENT,
     course_id INT,
